@@ -1,4 +1,7 @@
-# 🎲 juego-amigo-secreto ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-yellow)
+# 🎲 juego-amigo-secreto ![Badge en Desarollo](https://img.shields.io/badge/STATUS-HECHO-green)  ![GitHub Org's stars](https://img.shields.io/github/stars/arleydemelquisedeclisbet/juego-amigo-secreto?style=social)
+
+
+
 
 ## Índice
 * [Índice](#índice)
