@@ -127,6 +127,8 @@ button {
 
 /* Listas */
 ul {
+    display: flex;
+    gap: 1rem;
     list-style-type: none;
     color: var(--color-text);
     font-family: "Inter", sans-serif;
@@ -159,4 +161,15 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-primary);
+    text-align: center;
+    background: #05DF05;
+    border-radius: 10px;
+    padding: 10px;
 }
