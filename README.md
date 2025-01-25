@@ -1,4 +1,14 @@
-# 🎲 juego-amigo-secreto 
+# 🎲 juego-amigo-secreto ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-yellow)
+
+## Índice
+* [Índice](#índice)
+* [Descripción del proyecto](descripción)
+* [Funcionalidades](funcionalidades)
+* [Agregar nombres](#agregar-nombres)
+* [Validar entrada](#validar-entrada)
+* [Visualizar la lista](#visualizar-la-lista)
+* [Sorteo Aleatorio](#sorteo-aleatorio)
+* [Autor](desarrollador)
 
 # 🏷️ Descripción
 - Aplicación que permite a los usuarios ingresar nombres de amigos en una lista para luego realizar un sorteo aleatorio y determinar quién es el "amigo secreto".
