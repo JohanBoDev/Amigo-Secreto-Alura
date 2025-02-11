@@ -19,13 +19,13 @@
         
         <section class="input-section">
             <h2 class="section-title">Digite el nombre de sus amigos</h2>
-            <div class="input-wrapper">
+            <form class="input-wrapper" onsubmit="agregarAmigo()" action="javascript:void(0);">
                 <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
-                <button class="button-add" onclick="agregarAmigo()">Añadir</button>
-            </div>
+                <button class="button-add" type="submit">Añadir</button>
+            </form>
         
             <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
-            <ul id="resultado" class="result-list" aria-live="polite"></ul>
+            <h2 id="resultado" class="result-list" aria-live="polite"></h2>
 
             <div class="button-container">
                 <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">

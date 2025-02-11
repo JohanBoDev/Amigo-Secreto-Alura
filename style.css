@@ -43,6 +43,7 @@ body {
 
 /* Sección de entrada */
 .input-section {
+    font-family: "Inter", sans-serif;
     flex: 60%;
     background-color: var(--color-secondary);
     border: 1px solid #000;
@@ -52,7 +53,6 @@ body {
     align-items: center;
     padding: 20px;
     width: 100%;
-    font-size: 1.2em;
 }
 
 /* Títulos */
@@ -64,7 +64,6 @@ body {
 }
 
 .section-title {
-    font-family: "Inter", serif;
     font-weight: 700;
     color: var(--color-primary);
     margin: 10px 0;
@@ -82,11 +81,11 @@ body {
 }
 
 .input-name {
-    width: 100%;
-    padding: 10px;
+    width: 80%;
+    padding: 3%;
     border: 1px solid var(--color-button);
     border-radius: 25px 0 0 25px;
-    font-size: 16px;
+    font-size: 100%;
 }
 
 .button-container {
@@ -96,9 +95,8 @@ body {
 
 /* Estilos de botón */
 button {
-    padding: 15px 30px;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
+    padding: .725rem 1.725rem;
+    font-size: 100%;
     border: 1px solid var(--color-button);
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -121,19 +119,18 @@ button {
 /* Listas */
 ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
     list-style-type: none;
     color: var(--color-text);
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
-    margin: 20px 0;
+    margin-top: 1.5rem;
 }
 
 .result-list {
-    margin-top: 15px;
+    margin: 1rem 0;
     color: #dbfe87;
-    font-size: 22px;
-    font-weight: bold;
+    font-weight: bolder;
     text-align: center;
 }
 
@@ -143,10 +140,8 @@ ul {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    padding: 10px 40px;
     color: var(--color-white);
     background-color: var(--color-button);
-    font-size: 16px;
 }
 
 .button-draw:hover {
@@ -156,14 +151,13 @@ ul {
 }
 
 li {
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: bolder;
     color: var(--color-primary);
     text-align: center;
     background: #b2aa8e;
     border-radius: 10px;
-    padding: 10px;
+    padding: .5rem 1rem;
 }
 
 @media (width <= 816px) {
