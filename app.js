@@ -8,7 +8,13 @@ const resultado = document.getElementById('resultado');
 
 // Función para agregar amigos
 const agregarAmigo = () => {
-  if (inputNombreAmigo.value) {
+  let nombreAmigo = inputNombreAmigo.value;
+  if (nombreAmigo) {
+    if (amigos.includes(nombreAmigo)) {
+      inputNombreAmigo.value = '';
+      alert(`Ya existe un amigo llamado ${nombreAmigo}`);
+      return;
+    }
     amigos.push(inputNombreAmigo.value);
     inputNombreAmigo.value = '';
     actualizarListaAmigos();
