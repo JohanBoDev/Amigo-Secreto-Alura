@@ -163,7 +163,10 @@ li {
 
 /* Estilos de footer */
 .footer-container {
-    text-align: center;
+    a {
+        text-align: center;
+    }
+
     width: 100%;
     font-family: "Inter", sans-serif;
     background-color: var(--color-tertiary);
