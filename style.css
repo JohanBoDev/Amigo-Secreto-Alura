@@ -61,7 +61,7 @@ body {
     font-family: "Merriweather", serif;
     font-weight: 900;
     font-style: italic;
-    color: var(--color-primary);
+    color: var(--color-white);
 }
 
 .section-title {
@@ -69,7 +69,7 @@ body {
     color: var(--color-tertiary);
     margin: 10px 0;
     text-align: center;
-    text-stroke: 1px var(--color-primary);
+    text-stroke: 2px var(--color-primary);
 }
 
 /* Contenedores de entrada y botón */
@@ -198,7 +198,7 @@ li {
             top: 70%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: var(--color-white);
+            color: var(--color-primary);
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
     }
