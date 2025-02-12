@@ -168,9 +168,6 @@ li {
     font-family: "Inter", sans-serif;
     background-color: var(--color-tertiary);
     color: var(--color-white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 2%;
     border-radius: 0 0 3rem 3rem;
 }
