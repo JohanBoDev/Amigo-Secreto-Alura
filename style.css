@@ -61,7 +61,7 @@ body {
     font-family: "Merriweather", serif;
     font-weight: 900;
     font-style: italic;
-    color: var(--color-white);
+    color: var(--color-primary);
 }
 
 .section-title {
@@ -69,6 +69,7 @@ body {
     color: var(--color-tertiary);
     margin: 10px 0;
     text-align: center;
+    text-stroke: 1px var(--color-primary);
 }
 
 /* Contenedores de entrada y botón */
