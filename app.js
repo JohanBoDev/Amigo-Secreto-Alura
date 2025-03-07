@@ -1,6 +1,7 @@
 // Solución del challenge amigo secreto
 
 const amigos = [];
+const amigosElegibles = [];
 
 const inputNombreAmigo = document.getElementById('amigo');
 const listaAmigos = document.getElementById('listaAmigos');
@@ -16,6 +17,7 @@ const agregarAmigo = () => {
       return;
     }
     amigos.push(inputNombreAmigo.value);
+    amigosElegibles.push({ nombre: inputNombreAmigo.value, elegido: false });
     inputNombreAmigo.value = '';
     actualizarListaAmigos();
     return;
@@ -26,9 +28,9 @@ const agregarAmigo = () => {
 // Función para actualizar la lista de amigos
 const actualizarListaAmigos = () => {
   listaAmigos.innerHTML = '';
-  amigos.forEach(amigo => {
+  amigosElegibles.forEach(amigo => {
     const li = document.createElement('li');
-    li.textContent = amigo;
+    li.textContent = amigo.nombre;
     listaAmigos.appendChild(li);
   });
   // Limpiar el resultado anterior
@@ -39,16 +41,43 @@ const actualizarListaAmigos = () => {
 
 // Función para sortear amigos
 const sortearAmigo = () => {
-  if (amigos.length) {
+  if (amigosElegibles.some(amigo => amigo.elegido === false)) {
     startConfetti();
-    const indiceAmigoElegido = Math.floor(Math.random() * amigos.length);
-    const amigoElegido = amigos.splice(indiceAmigoElegido, 1);;
-    listaAmigos.innerHTML = '';
-    actualizarListaAmigos();
-    resultado.innerHTML = `El amigo elegido es ${amigoElegido}`;
+    const indiceAmigo = Math.floor(Math.random() * amigos.length);
+    const [amigoElegido] = amigos.splice(indiceAmigo, 1);
+    const indiceAmigoElegido = amigosElegibles.findIndex(amigo => amigo.nombre === amigoElegido);
+    amigosElegibles[indiceAmigoElegido].elegido = true;
+    mostrarResultado(`El amigo elegido es ${amigoElegido}`);
   } else {
-    resultado.innerHTML = 'No hay amigos para sortear';
+    mostrarResultado(
+      !amigosElegibles.length
+        ? 'No hay amigos para sortear'
+        : 'Todos los amigos ya han sido elegidos'
+    );
   }
+}
+
+// Función para reiniciar el sorteo
+const reiniciarSorteo = () => {
+  if (!amigosElegibles.length || amigosElegibles.every(amigo => !amigo.elegido)) {
+    return;
+  }
+
+  amigos.splice();
+  amigosElegibles.forEach(amigo => {
+    amigos.push(amigo.nombre);
+    amigo.elegido = false;
+  });
+
+  mostrarResultado('De nuevo todos los amigos son elegibles en el sorteo');
+}
+
+// Función para mostrar el resultado del sorteo
+const mostrarResultado = (mensaje) => {
+  resultado.innerHTML = mensaje;
+  setTimeout(() => {
+    resultado.innerHTML = '';
+  }, 3000);
 }
 
 function startConfetti() {

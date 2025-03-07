@@ -91,6 +91,8 @@ body {
 
 .button-container {
     width: 300px;
+    display: flex;
+    gap: 1rem;
     justify-content: center;
 }
 
@@ -143,6 +145,7 @@ ul {
     width: 100%;
     color: var(--color-white);
     background-color: var(--color-button);
+    gap: .5rem;
 }
 
 .button-draw:hover {
@@ -172,6 +175,7 @@ li {
     align-items: center;
     padding: 2%;
     border-radius: 0 0 3rem 3rem;
+    text-align: center;
 }
 
 @media (width <= 816px) {
