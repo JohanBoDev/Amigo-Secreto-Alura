@@ -155,6 +155,8 @@ ul {
 }
 
 li {
+    display: flex;
+    gap: .5rem;
     font-size: 1.2rem;
     font-weight: bolder;
     color: var(--color-primary);
@@ -176,6 +178,19 @@ li {
     padding: 2%;
     border-radius: 0 0 3rem 3rem;
     text-align: center;
+}
+
+.button-eliminar {
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+
+    img {
+        width: 20px;
+    }
+
 }
 
 @media (width <= 816px) {

@@ -30,7 +30,11 @@ const actualizarListaAmigos = () => {
   listaAmigos.innerHTML = '';
   amigosElegibles.forEach(amigo => {
     const li = document.createElement('li');
+    const eliminarButton = createDeleteButton(amigo);
+
     li.textContent = amigo.nombre;
+    li.appendChild(eliminarButton);
+
     listaAmigos.appendChild(li);
   });
   // Limpiar el resultado anterior
@@ -63,13 +67,15 @@ const reiniciarSorteo = () => {
     return;
   }
 
-  amigos.splice();
-  amigosElegibles.forEach(amigo => {
-    amigos.push(amigo.nombre);
-    amigo.elegido = false;
-  });
-
-  mostrarResultado('De nuevo todos los amigos son elegibles en el sorteo');
+  if (window.confirm('¿Está seguro de que desea reiniciar el sorteo?')) {
+    amigos.splice();
+    amigosElegibles.forEach(amigo => {
+      amigos.push(amigo.nombre);
+      amigo.elegido = false;
+    });
+  
+    mostrarResultado('De nuevo todos los amigos son elegibles en el sorteo');
+  }
 }
 
 // Función para mostrar el resultado del sorteo
@@ -78,6 +84,37 @@ const mostrarResultado = (mensaje) => {
   setTimeout(() => {
     resultado.innerHTML = '';
   }, 3000);
+}
+
+// Función para eliminar un amigo
+const eliminarAmigo = (nombre) => {
+  const indiceAmigo = amigos.findIndex(amigo => amigo === nombre);
+  if (indiceAmigo !== -1) {
+    if (window.confirm(`¿Está seguro de que desea remover a ${nombre} del sorteo?`)) {
+      const [amigoEliminado] = amigos.splice(indiceAmigo, 1);
+      const indiceAmigoEliminado = amigosElegibles.findIndex(amigo => amigo.nombre === amigoEliminado);
+      amigosElegibles.splice(indiceAmigoEliminado, 1);
+      actualizarListaAmigos();
+      mostrarResultado(`${nombre} se remueve del sorteo`);
+    }
+  } else {
+    if(window.confirm(`No se puede eliminar a ${nombre} porque ya se ha sorteado, ¿Desea reiniciar el sorteo?`)) {
+      reiniciarSorteo();
+    }
+  }
+}
+
+function createDeleteButton(amigo) {
+  const eliminarButton = document.createElement('button');
+  const eliminarButtonIcon = document.createElement('img');
+
+  eliminarButtonIcon.src = 'assets/delete.svg';
+  eliminarButtonIcon.alt = 'Ícono para eliminar';
+
+  eliminarButton.appendChild(eliminarButtonIcon);
+  eliminarButton.onclick = () => eliminarAmigo(amigo.nombre);
+  eliminarButton.classList.add('button-eliminar');
+  return eliminarButton;
 }
 
 function startConfetti() {
