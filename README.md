@@ -24,26 +24,55 @@
 
 # ⚒️ Funcionalidades
 ## Agregar nombres
-Los usuarios escribirán el nombre de un amigo en un campo de texto y lo agregarán a una lista visible al hacer clic en "Adicionar".
+Los usuarios escribirán el nombre de un amigo en un campo de texto y lo agregarán a una lista visible al hacer clic en "Añadir".
 
-![Captura desde 2025-01-24 23-39-58](https://github.com/user-attachments/assets/4eeda27f-000c-4b86-9248-a66eedccba28)
-![Captura desde 2025-01-24 23-41-07](https://github.com/user-attachments/assets/e2c4c7ea-8265-420c-b777-904cc5bcbea0)
+![Añadir1](https://github.com/user-attachments/assets/93c7eaac-6587-49b6-bffe-1bccabbc8a2f)
+![image](https://github.com/user-attachments/assets/3be3aa27-a801-4308-82fc-5fcaad7081b1)
+
 
 ## Validar entrada
 Si el campo de texto está vacío, el programa mostrará una alerta pidiendo un nombre válido.
 
-![Captura desde 2025-01-24 23-42-32](https://github.com/user-attachments/assets/9c3d4889-c35f-43b5-a70d-0641629de428)
+![image](https://github.com/user-attachments/assets/3b22c3f6-9497-4c87-b949-d1eda24ca49b)
+
 
 ## Visualizar la lista
 Los nombres ingresados aparecerán en una lista debajo del campo de entrada.
 
-![Captura desde 2025-01-24 22-47-36](https://github.com/user-attachments/assets/125e91c9-eeed-42e5-9c27-93590ef79a68)
+![image](https://github.com/user-attachments/assets/198d8100-26f8-487f-bb35-fff0ee42e72e)
 
-## Sorteo aleatorio
-Al hacer clic en el botón "Sortear Amigo", se seleccionará aleatoriamente un nombre de la lista y se mostrará en la página.
 
-![Captura desde 2025-01-24 22-49-31](https://github.com/user-attachments/assets/67215095-99ab-4e47-bdd5-ba69e734658d)
-![Captura desde 2025-01-24 22-50-12](https://github.com/user-attachments/assets/3cc69024-3805-4fda-b1cb-c5eacc5fa865)
+## Sorteo aleatorio (Botón 'Sortear amigo')
+Al hacer clic en el botón "Sortear Amigo", se seleccionará aleatoriamente un nombre de la lista y se mostrará en la página por 3 segundos.
+
+![image](https://github.com/user-attachments/assets/99cad163-2dbc-4c45-ae4e-9e3c1570dc84)
+
+Si ya todos los amigos han sido sorteados muestra el mensaje informando.
+![image](https://github.com/user-attachments/assets/7e7ba4f9-e462-48e4-965f-777a61766462)
+
+## Reiniciar sorteo (Botón 'Reiniciar sorteo')
+
+De nuevo todos los amigos en la lista son sorteables
+
+### Pregunta si desea reiniciar el sorteo
+![image](https://github.com/user-attachments/assets/d5c1542b-4316-4e8c-8994-4f759274d7bd)
+
+### Después de aceptar informa al usuario
+![image](https://github.com/user-attachments/assets/5da61cc9-4fdf-4ac0-a63a-fe42a486efd0)
+
+## Eliminar o remover amigo (botón 'bote de basura' al lado de cada amigo
+![image](https://github.com/user-attachments/assets/eb15cc75-0dd6-4522-ab4f-dcdfb9b13c87)
+
+### Sólo se pueden eliminar amigos que no hayan sido sorteados
+![image](https://github.com/user-attachments/assets/e6162b44-eb0b-456a-930e-697fd6ab7171)
+
+### Pregunta si realmente desea eliminar el amigo
+![image](https://github.com/user-attachments/assets/8df2128e-2492-4924-bdd4-76a0c573681b)
+
+### Al aceptar, remueve el amigo de la lista
+![image](https://github.com/user-attachments/assets/39d82e84-f6f5-4aeb-aeda-75788dd66508)
+
+
 
 # 🤵 Desarrollador
 [<img src="https://github.com/user-attachments/assets/b1c94700-33f7-42e0-9d3a-322ab3580dcc" width=115><br><sub>Wilmar De MelquisedecLisbet</sub>](https://github.com/arleydemelquisedeclisbet)
