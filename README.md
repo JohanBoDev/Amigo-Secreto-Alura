@@ -10,7 +10,10 @@
 * [Agregar nombres](#agregar-nombres)
 * [Validar entrada](#validar-entrada)
 * [Visualizar la lista](#visualizar-la-lista)
-* [Sorteo Aleatorio](#sorteo-aleatorio)
+* [Sorteo Aleatorio](#sorteo-aleatorio-botón-sortear-amigo)
+* [Reiniciar Sorteo](#reiniciar-sorteo-botón-reiniciar-sorteo)
+* [Eliminar o remover amigo](#eliminar-o-remover-amigo-botón-bote-de-basura-al-lado-de-cada-amigo)
+* [Recursos](#recursos-utilizados)
 * [Desarrollador](#-desarrollador)
 
 # 🏷️ Descripción
@@ -60,7 +63,7 @@ De nuevo todos los amigos en la lista son sorteables
 ### Después de aceptar informa al usuario
 ![image](https://github.com/user-attachments/assets/5da61cc9-4fdf-4ac0-a63a-fe42a486efd0)
 
-## Eliminar o remover amigo (botón 'bote de basura' al lado de cada amigo
+## Eliminar o remover amigo (botón 'bote de basura' al lado de cada amigo)
 ![image](https://github.com/user-attachments/assets/eb15cc75-0dd6-4522-ab4f-dcdfb9b13c87)
 
 ### Sólo se pueden eliminar amigos que no hayan sido sorteados
@@ -72,7 +75,14 @@ De nuevo todos los amigos en la lista son sorteables
 ### Al aceptar, remueve el amigo de la lista
 ![image](https://github.com/user-attachments/assets/39d82e84-f6f5-4aeb-aeda-75788dd66508)
 
+## Recursos utilizados
 
+  * [Curso Principiante en Programación G8 - ONE](https://app.aluracursos.com/formacion-programacion-primeros-pasos-grupo8-one)
+  * HTML - CSS - JavaScript
+  * [Coolors](https://coolors.co/) para la paleta de colores
+  * [canvas-confetti](https://github.com/catdad/canvas-confetti)
+  * [ANIMATEDICONS](https://animatedicons.co/)
+  * [ChatGPT](https://chatgpt.com/)
 
 # 🤵 Desarrollador
 [<img src="https://github.com/user-attachments/assets/b1c94700-33f7-42e0-9d3a-322ab3580dcc" width=115><br><sub>Wilmar De MelquisedecLisbet</sub>](https://github.com/arleydemelquisedeclisbet)
