@@ -29,7 +29,7 @@
 ## Agregar nombres
 Los usuarios escribirán el nombre de un amigo en un campo de texto y lo agregarán a una lista visible al hacer clic en "Añadir".
 
-![Añadir1](https://github.com/user-attachments/assets/93c7eaac-6587-49b6-bffe-1bccabbc8a2f)
+
 
 
 
